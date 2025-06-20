@@ -1,14 +1,14 @@
 [
-  { "id": 1, "name": "Togekiss" },
-  { "id": 2, "name": "Dragapult" },
-  { "id": 3, "name": "Corviknight" },
-  { "id": 4, "name": "Garchomp" },
-  { "id": 5, "name": "Sylveon" },
-  { "id": 6, "name": "Infernape" },
-  { "id": 7, "name": "Tinkaton" },
-  { "id": 8, "name": "Ekans" },
-  { "id": 9, "name": "Decidueye" },
-  { "id": 10, "name": "Haxorus" },
-  { "id": 11, "name": "Bulbasaur" },
-  { "id": 12, "name": "Pikachu" }
+  { "id": 0, "name": "togekiss" },
+  { "id": 1, "name": "dragapult" },
+  { "id": 2, "name": "corviknight" },
+  { "id": 3, "name": "garchomp" },
+  { "id": 4, "name": "sylveon" },
+  { "id": 5, "name": "infernape" },
+  { "id": 6, "name": "tinkaton" },
+  { "id": 7, "name": "ekans" },
+  { "id": 8, "name": "decidueye" },
+  { "id": 9, "name": "haxorus" },
+  { "id": 10, "name": "bulbasaur" },
+  { "id": 11, "name": "pikachu" }
 ]
