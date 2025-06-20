@@ -7,3 +7,7 @@ main {
   background-color: brown;
   min-height: 80vh;
 }
+
+header {
+  color: white
+}
