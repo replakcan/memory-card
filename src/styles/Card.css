@@ -1,0 +1,12 @@
+.game-card {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: skyblue;
+    min-width: 200px;
+    padding: 1rem;
+}
+
+.game-card > h2 {
+    margin: 0;
+}
