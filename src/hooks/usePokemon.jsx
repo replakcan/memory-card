@@ -15,7 +15,7 @@ export function usePokemon(pokemonName) {
       .then((response) => setPokemon(response))
       .catch((err) => setError(err))
       .finally(() => setLoading(false))
-  }, [])
+  }, [pokemonName])
 
   return { pokemon, error, loading }
 }
