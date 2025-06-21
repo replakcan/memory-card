@@ -1,13 +1,16 @@
 main {
   display: flex;
   justify-content: space-around;
-  gap: 4rem;
+  gap: 1rem;
   padding: 1rem;
   flex-wrap: wrap;
   background-color: brown;
-  min-height: 80vh;
 }
 
 header {
+  display: flex;
+  place-items: center;
+  place-content: center;
+  height: 5vh;
   color: white
 }
