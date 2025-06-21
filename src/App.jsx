@@ -27,8 +27,6 @@ function App() {
     shuffle(pokemonNames)
   }
 
-  console.log(clickedCards)
-
   return (
     <>
       <header>
