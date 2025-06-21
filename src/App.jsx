@@ -2,6 +2,7 @@ import './App.css'
 import pokemonNames from './data/pokemon-names.json'
 import Card from './components/Card'
 import { useState } from 'react'
+import { shuffle } from './lib/shuffle-array.js'
 
 function App() {
   const [clickedCards, setClickedCards] = useState(new Array(12).fill(false))
@@ -22,6 +23,8 @@ function App() {
       }
       setClickedCards(clickedCards.map(() => false))
     }
+
+    shuffle(pokemonNames)
   }
 
   console.log(clickedCards)
