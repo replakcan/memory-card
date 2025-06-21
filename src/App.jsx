@@ -5,26 +5,32 @@ import { useState } from 'react'
 
 function App() {
   const [clickedCards, setClickedCards] = useState(new Array(12).fill(false))
-  const [streak, setStreak] = useState(0)
+  const [bestScore, setBestScore] = useState(0)
+
+  const currentStreak = clickedCards.filter((card) => card == true).length
 
   function handleClick(e) {
-    e.stopPropagation()
     const clickedPokemon = e.currentTarget.childNodes[1].innerHTML
 
-    const pokemonIndex = pokemonNames.find((pokemon) => pokemon.name == clickedPokemon).id
+    const clickedPokemonId = pokemonNames.find((pokemon) => pokemon.name == clickedPokemon).id
 
-    setClickedCards(
-      clickedCards.map((card, i) => {
-        return i == pokemonIndex ? true : card
-      })
-    )
+    if (clickedCards[clickedPokemonId] == false) {
+      setClickedCards(clickedCards.map((card, i) => (i == clickedPokemonId ? true : card)))
+    } else {
+      if (currentStreak > bestScore) {
+        setBestScore(currentStreak)
+      }
+      setClickedCards(clickedCards.map(() => false))
+    }
   }
 
   console.log(clickedCards)
 
   return (
     <>
-      <header>Score: </header>
+      <header>
+        Current Score: {currentStreak}, Best Score: {bestScore}
+      </header>
       <main>
         {pokemonNames.map((pokemon) => (
           <Card key={pokemon.id} name={pokemon.name} onClick={handleClick} />
