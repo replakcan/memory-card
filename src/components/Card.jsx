@@ -10,8 +10,8 @@ function Card({ name, onClick }) {
 
   return (
     <div className="game-card" onClick={onClick}>
-      <img src="hello" alt="" />
-      <h2 >{pokemon.name}</h2>
+      <img src={pokemon.sprites.back_default} alt={pokemon.name} />
+      <h2>{pokemon.name}</h2>
     </div>
   )
 }
