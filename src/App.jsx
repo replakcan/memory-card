@@ -30,7 +30,7 @@ function App() {
   return (
     <>
       <header>
-        Current Score: {currentStreak}, Best Score: {bestScore}
+        Current Score: {currentStreak} || Best Score: {bestScore}
       </header>
       <main>
         {pokemonNames.map((pokemon) => (
